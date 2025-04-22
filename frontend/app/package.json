@@ -1,7 +1,5 @@
 {
-  "homepage": "https://nikol4e2.github.io/QuickKickFECopy/",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
+  
   "name": "app",
   "version": "0.1.0",
   "private": true,
