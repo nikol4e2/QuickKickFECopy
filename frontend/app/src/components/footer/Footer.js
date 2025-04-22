@@ -2,6 +2,7 @@ import React from 'react'
 
 
 import './footer.css'
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (<footer className="footer-footer1 thq-section-padding">
@@ -14,38 +15,11 @@ const Footer = () => {
 
                             </strong>
                             <div className="footer-footer-links1">
-                                <a
-                                    href="https://example.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    className="thq-body-small"
-                                >
-                                    Почетна
-                                </a>
-                                <a
-                                    href="https://example.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    className="thq-body-small"
-                                >
-                                    Распоред
-                                </a>
-                                <a
-                                    href="https://example.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    className="thq-body-small"
-                                >
-                                    За нас
-                                </a>
-                                <a
-                                    href="https://example.com"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    className="thq-body-small"
-                                >
+                                <Link to="/">Почетна</Link>
 
-                                </a>
+                                <Link to="/about-us">За Нас</Link>
+                                <Link to="/registration">Пријавување</Link>
+
                                 <a
                                     href="https://example.com"
                                     target="_blank"
