@@ -22,6 +22,9 @@ const Hero = () => {
 
                         <Link className="thq-button-outline hero-button2 thq-body-small get-results-button equal-width-button" to={"/results"}>РЕЗУЛАТАТИ ОД ЗАВРЕШНИ НАТПРЕВАРИ</Link>
 
+
+                        
+
                 </div>
             </div>
             <div className="hero-content2">
