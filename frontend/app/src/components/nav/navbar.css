@@ -3,7 +3,17 @@
     display: flex;
     position: relative;
     justify-content: center;
-    background-color: var(--dl-color-theme-neutral-light);
+    background-color: #f9f9f9;
+    margin-top: 0;
+
+}
+
+.navbar-close-menu{
+    margin-right: 20px;
+
+}
+.link-nav{
+    font-size: 0.9rem;
 }
 
 .navbar-navbar-interactive {
@@ -120,6 +130,18 @@
     display: flex;
     margin-top: var(--dl-layout-space-twounits);
     align-items: center;
+}
+.watch-live-button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.watch-live-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
 
 @media(max-width: 767px) {

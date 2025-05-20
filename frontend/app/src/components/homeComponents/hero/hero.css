@@ -35,7 +35,11 @@
 
 .hero-text2 {
     text-align: center;
+    color: #000000 !important;
 }
+
+
+
 
 .hero-actions {
     gap: var(--dl-layout-space-unit);
@@ -184,6 +188,25 @@
 .hero-container2 {
     display: contents;
 }
+.watch-live-button{
+    color:white;
+}
+
+.get-results-button
+{
+    text-wrap: wrap;
+    text-align: center;
+
+   padding: 8.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-descritption{
+    color: #040303 !important;
+    text-align: center;
+}
 
 @media(max-width: 767px) {
     .hero-content2 {
@@ -202,4 +225,12 @@
     .hero-button2 {
         width: 100%;
     }
+
+
+
+
 }
+
+
+
+

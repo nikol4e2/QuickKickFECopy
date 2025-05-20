@@ -1,25 +1,27 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 
 import Script from 'react-dangerous-html'
 
 import './hero.css'
+import {Link} from "react-router-dom";
 
 const Hero = () => {
+
+
     return (
         <div className="hero-header78">
             <div className="hero-column thq-section-max-width thq-section-padding">
                 <div className="hero-content1">
-                    <h1 className="hero-text1 thq-heading-1">МЕМОРИЈАЛЕН ТУРНИР ВО МАЛ ФУДБАЛ <br/> АНДРЕЈ МИТЕВ </h1>
-                    <p className="hero-text2 thq-body-large">Меморијалниот турнир во мал фудбал „Андреј Митев“ е настан кој обединува спорт, пријателство и почит кон еден наш драг пријател. Турнирот се одржува со цел да се оддаде чест на Андреј, преку натпревари исполнети со фер-плеј, тимска енергија и спортски дух.</p>
+                    <h1 className="hero-text1 thq-heading-1 ml2" >МЕМОРИЈАЛЕН ТУРНИР ВО МАЛ ФУДБАЛ <br/> АНДРЕЈ МИТЕВ </h1>
+                    <p className="hero-text2 thq-body-large ">Меморијалниот турнир во мал фудбал „Андреј Митев“ е настан кој обединува спорт, пријателство и почит кон еден наш драг пријател. Турнирот се одржува со цел да се оддаде чест на Андреј, преку натпревари исполнети со фер-плеј, тимска енергија и спортски дух.</p>
                 </div>
                 <div className="hero-actions">
-                    <button className="thq-button-filled hero-button1">
-                        <span className="thq-body-small">РЕЗУЛАТИ ВО ЖИВО</span>
-                    </button>
-                    <button className="thq-button-outline hero-button2">
-                        <span className="thq-body-small">РЕЗУЛАТАТИ ОД ЗАВРЕШНИ НАТПРЕВАРИ</span>
-                    </button>
+
+                    <Link className="navbar-action11 thq-button-animated thq-button-filled watch-live-button" to="/live">РЕЗУЛТАТИ ВО ЖИВО</Link>
+
+                        <Link className="thq-button-outline hero-button2 thq-body-small get-results-button" to={"/results"}>РЕЗУЛАТАТИ ОД ЗАВРЕШНИ НАТПРЕВАРИ</Link>
+
                 </div>
             </div>
             <div className="hero-content2">
@@ -182,6 +184,7 @@ const Hero = () => {
                     ></Script>
                 </div>
             </div>
+
         </div>
     )
 }
