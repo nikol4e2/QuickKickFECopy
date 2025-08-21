@@ -47,8 +47,10 @@ const TeamsInfo = () => {
         switch (team?.teamGroup) {
             case "A": return "А";
             case "B": return "Б";
-            case "C": return "C";
-            case "D": return "D";
+            case "C": return "В";
+            case "D": return "Г";
+            case "E": return "Д";
+            case "F": return "Ѓ"
             default: return "N/A";
         }
     };
@@ -71,7 +73,7 @@ const TeamsInfo = () => {
                 {team && (
                     <div className="team-details-box">
                         <h2>{team.name}</h2>
-                        <p><strong>Група:</strong> {printTeamGroup()}</p>
+                        <p><strong>Група:</strong> {team?.teamGroup}</p>
                         <h3>Статистика во групна фаза</h3>
                         <hr />
                         <p><strong>Победи:</strong> {team.wins}</p>
