@@ -3,7 +3,7 @@ import "./sponsorSection.css";
 
 const sponsors = [
     { name: "Општина Чешиново-Облешево", img: "/sponsors/opstina.JPG" },
-    { name: "Anthura", img:"/sponsors/Anthura.JPG"},
+    { name: "Anthura", img:"/sponsors/anthura.JPG"},
     { name: "Клиника Љубомировски", img: "/sponsors/klinikaLjubomirovski.JPG" },
     { name: "Amphenol", img: "/sponsors/Amphenol.JPG" },
     { name: "Вулканизер Даро", img: "/sponsors/vulkanizerDaro.JPG"},
