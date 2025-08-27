@@ -38,9 +38,9 @@ const AddTeam = () => {
                     <select name="group" value={group} onChange={handleChangeGroup}>
                         <option value="">Избери група</option>
                         <option value="A">Група А</option>
-                        <option value="B">Група Б</option>
-                        <option value="C">Група В</option>
-                        <option value="D">Група Г</option>
+                        <option value="B">Група B</option>
+                        <option value="C">Група C</option>
+                        <option value="D">Група D</option>
                     </select>
                 </div>
                 <button type="submit">ДОДАДИ ТИМ</button>
