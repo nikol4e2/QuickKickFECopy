@@ -14,13 +14,14 @@ const Hero = () => {
             <div className="hero-column thq-section-max-width thq-section-padding">
                 <div className="hero-content1">
                     <h1 className="hero-text1 thq-heading-1 ml2" >МЕМОРИЈАЛЕН ТУРНИР ВО МАЛ ФУДБАЛ <br/> АНДРЕЈ МИТЕВ </h1>
-                    <p className="hero-text2 thq-body-large ">Меморијалниот турнир во мал фудбал „Андреј Митев“ е настан кој обединува спорт, пријателство и почит кон еден наш драг пријател. Турнирот се одржува со цел да се оддаде чест на Андреј, преку натпревари исполнети со фер-плеј, тимска енергија и спортски дух.</p>
+                    <p className="hero-text2 thq-body-large ">Меморијалниот турнир во мал фудбал „Андреј Митев“ е настан кој обединува спорт, пријателство и почит кон еден наш драг пријател.
+                        <br/>Турнирот се одржува со цел да се оддаде чест на Андреј, преку натпревари исполнети со фер-плеј, тимска енергија и спортски дух.</p>
                 </div>
                 <div className="hero-actions">
 
                     <Link className="navbar-action11 thq-button-animated thq-button-filled watch-live-button equal-width-button"  to="/live">РЕЗУЛТАТИ ВО ЖИВО</Link>
 
-                        <Link className="thq-button-outline hero-button2 thq-body-small get-results-button equal-width-button" to={"/results"}>РЕЗУЛТАТИ ОД ЗАВРЕШНИ НАТПРЕВАРИ</Link>
+                        <Link className="thq-button-outline hero-button2 thq-body-small get-results-button equal-width-button" to={"/results"}>РЕЗУЛАТАТИ ОД ЗАВРЕШНИ НАТПРЕВАРИ</Link>
 
                 </div>
             </div>

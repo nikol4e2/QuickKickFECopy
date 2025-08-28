@@ -105,7 +105,7 @@
 .steps-container9 {
     top: 10%;
     position: sticky;
-
+transform: rotate(-2deg);
     background: linear-gradient(135deg, #007BFF, #0056b3); /* сина боја */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
@@ -180,38 +180,42 @@
 }
 
 @media(max-width: 767px) {
-
-    .steps-max-width {
-        flex-direction: column;
-        align-items: center;
-    }
-
+    /* Центрирање и намалување на главниот wrapper */
     .steps-container3 {
-        width: 100%;
+        width: 70%;          
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        margin: 0 auto;
+    }
+    .position{
+        font-size: 1.3rem;
     }
 
+    /* Картичките помали */
     .steps-container4,
     .steps-container5,
     .steps-container6,
-    .steps-container7 {
-        width: 90%;
-        transform: none;
+    .steps-container7,
+    .steps-container9 {
+        width: 100%;          
+        max-width: 320px;     /* ограничување за телефони */
+            /* откажи rotate */
         position: relative;
         top: auto;
         margin-bottom: 1rem;
-        padding: 1.5rem;
+        padding: 1rem;
         border-radius: 10px;
     }
 
+    /* Големина на текстот */
     .steps-text11,
     .steps-text14,
     .steps-text17,
     .steps-text20 {
-        font-size: 1.25rem;
+        font-size: 1.2rem;   /* помал текст */
+        text-align: center;
     }
 
     .steps-text12,
@@ -219,14 +223,24 @@
     .steps-text18,
     .steps-text21 {
         position: static;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-top: 0.5rem;
         display: block;
         text-align: center;
     }
 
+    /* Наслов */
     .heading-awards {
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: center;
+    }
+
+    /* Родителски wrapper */
+    .steps-max-width {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;  /* мал padding од страна */
+        box-sizing: border-box;
     }
 }

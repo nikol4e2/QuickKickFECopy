@@ -262,4 +262,7 @@
         font-size: 0.7rem;
         text-align: center;
     }
+    .thq-section-padding{
+        padding: 1px;
+    }
 }
