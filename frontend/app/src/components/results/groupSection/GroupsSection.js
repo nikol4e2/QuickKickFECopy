@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Service from "../../../repository/repository.js";
 import "./groupsSection.css";
 import EliminationSimulation from "../../eliminationSimulation/EliminationSimulation";
+import { div } from 'motion/react-client';
 
 
 const GroupsSection = () => {
@@ -15,7 +16,10 @@ const GroupsSection = () => {
     const [showSimulation, setShowSimulation] = useState(false);
     const [selectedGroups, setSelectedGroups] = useState([]);
 
+    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
+    
         loadTeamsByGroup();
     }, []);
 
@@ -25,7 +29,7 @@ const GroupsSection = () => {
         Service.fetchTeamsByGroup("c").then(response => setGroupCTeams(response.data));
         Service.fetchTeamsByGroup("d").then(response => setGroupDTeams(response.data));
         Service.fetchTeamsByGroup("e").then(response => setGroupETeams(response.data));
-        Service.fetchTeamsByGroup("f").then(response => setGroupFTeams(response.data));
+        Service.fetchTeamsByGroup("f").then(response => setGroupFTeams(response.data)).finally(setLoading(false));
     };
 
     const handleToggleSimulation = () => {
@@ -52,6 +56,7 @@ const GroupsSection = () => {
     const renderGroupTable = (title, teams) => (
         <div className="group-table-wrapper">
             <h3 className="group-title">{title}</h3>
+            
             <table className="group-table">
                 <thead>
                 <tr className="table-head">
@@ -136,12 +141,17 @@ const GroupsSection = () => {
                     )}
                 </div>
             )}
-
-            <h2 className="section-title">Групи</h2>
-            {renderGroupTable("Група А", groupATeams)}
-            {renderGroupTable("Група B", groupBTeams)}
-            {renderGroupTable("Група C", groupCTeams)}
-            {renderGroupTable("Група D", groupDTeams)}
+         {loading ? (
+            <div className='spinner'></div>
+        ) : (
+            <>
+                <h2 className="section-title">Групи</h2>
+                {renderGroupTable("Група А", groupATeams)}
+                {renderGroupTable("Група B", groupBTeams)}
+                {renderGroupTable("Група C", groupCTeams)}
+                {renderGroupTable("Група D", groupDTeams)}
+            </>
+        )}
           
         </div>
     );
