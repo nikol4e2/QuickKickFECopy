@@ -277,7 +277,7 @@
 
 @media (max-width: 767px) {
     .hero-text1 {
-        font-size: 28px; /* намалено за tablet/mobilni */
+        font-size: 30px; /* намалено за tablet/mobilni */
     }
     .get-results-button{
         font-size: 1rem; 
@@ -286,7 +286,7 @@
 
 @media (max-width: 479px) {
     .hero-text1 {
-        font-size: 20px; /* уште помал font за телефони */
+        font-size: 30px; /* уште помал font за телефони */
         line-height: 1.3; /* за да не зафаќа премногу простор */
     }
     .get-results-button
