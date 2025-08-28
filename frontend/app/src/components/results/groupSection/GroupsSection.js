@@ -99,9 +99,12 @@ const GroupsSection = () => {
 
     return (
         <div className="groups-section-container">
-            <button className="simulate-btn" onClick={handleToggleSimulation}>
-                {showSimulation ? "Затвори" : "Симулирај осминафинале"}
-            </button>
+           
+   {/* 
+<button className="simulate-btn" onClick={handleToggleSimulation}>
+    {showSimulation ? "Затвори" : "Симулирај осминафинале"}
+</button>
+*/}
 
             {showSimulation && (
                 <div className="simulation-selection">
@@ -139,8 +142,7 @@ const GroupsSection = () => {
             {renderGroupTable("Група B", groupBTeams)}
             {renderGroupTable("Група C", groupCTeams)}
             {renderGroupTable("Група D", groupDTeams)}
-            {renderGroupTable("Група E", groupETeams)}
-            {renderGroupTable("Група F", groupFTeams)}
+          
         </div>
     );
 };
