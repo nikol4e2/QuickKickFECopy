@@ -30,7 +30,17 @@
     letter-spacing: 1px;
 }
 
+.divider {
+  border-left: 1px solid #fff;
+  height: 40px;
+  background-color: rgb(255, 254, 254);
+  margin:auto
+}
+
 .score {
+    display: flex;
+  justify-content: center;
+  gap: 8px;
     font-size: 3rem;
     font-weight: bold;
     width: 30%;
@@ -73,31 +83,58 @@
     color: #ff4d4d;
 }
 
+
+
 @media (max-width: 600px) {
     .live-scoreboard {
-        padding: 20px;
+        padding: 15px;
+        border-radius: 12px;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+    .fauls{
+    font-size: 1.5rem !important ;
     }
 
+      .divider {
+    width: 20px;
+    height: 1px; /* ќе стане хоризонтална линија */
+  }
     .teams-live {
         flex-direction: column;
-        gap: 16px;
-        font-size: 2rem;
+        gap: 10px;
+        font-size: 1.6rem;
     }
 
-    .team,
-    .score {
-        width: 100%;
+    .team-left h2,
+    .team-right h2 {
+        font-size: 1.4rem;
+    }
+
+    .team-left p,
+    .team-right p {
+        font-size: 1rem;
     }
 
     .score {
-        margin: 10px 0;
+        font-size: 2.2rem; 
+        padding: 10px 0;
+        margin: 8px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px
+    }
+
+    .score span {
+        padding: 0 6px;
     }
 
     .match-info {
         flex-direction: column;
-        gap: 8px;
+        gap: 6px;
         text-align: center;
-        margin-top: 25px;
+        font-size: 1.1rem;
+        margin-top: 15px;
     }
 }
 

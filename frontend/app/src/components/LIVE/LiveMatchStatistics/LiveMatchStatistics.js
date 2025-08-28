@@ -82,16 +82,16 @@ const LiveMatchStatistics = () => {
                 <div className="teams-live">
                     <div className="team-left">
                         <h2>{match.team1.name}</h2>
-                        <p>Фаули: {faulsTeam1}</p>
+                        <p className='fauls'>Фаули: {faulsTeam1}</p>
                     </div>
                     <div className="score">
                         <span>{goalsTeam1}</span>
-                        <span>|</span>
+                        <span className="divider"></span>
                         <span>{goalsTeam2}</span>
                     </div>
                     <div className="team-right">
                         <h2>{match.team2.name}</h2>
-                        <p>Фаули: {faulsTeam2}</p>
+                        <p className='fauls'>Фаули: {faulsTeam2}</p>
                     </div>
                 </div>
                 <div className="match-info">
