@@ -141,17 +141,15 @@ const GroupsSection = () => {
                     )}
                 </div>
             )}
-         {loading ? (
-            <div className='spinner'></div>
-        ) : (
-            <>
+        
+           
                 <h2 className="section-title">Групи</h2>
                 {renderGroupTable("Група А", groupATeams)}
                 {renderGroupTable("Група B", groupBTeams)}
                 {renderGroupTable("Група C", groupCTeams)}
                 {renderGroupTable("Група D", groupDTeams)}
-            </>
-        )}
+            
+       
           
         </div>
     );
