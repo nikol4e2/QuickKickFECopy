@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Service from "../../../repository/repository.js";
 import "./groupsSection.css";
 import EliminationSimulation from "../../eliminationSimulation/EliminationSimulation";
-import { div } from 'motion/react-client';
+
 
 
 const GroupsSection = () => {
