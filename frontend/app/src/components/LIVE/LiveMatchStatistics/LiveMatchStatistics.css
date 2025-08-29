@@ -98,7 +98,7 @@
 
       .divider {
     width: 20px;
-    height: 1px; /* ќе стане хоризонтална линија */
+    height: 1px; 
   }
     .teams-live {
         flex-direction: column;

@@ -3,31 +3,35 @@
     display: flex;
     position: relative;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    align-self: center;
+    justify-self: center;
 }
 
 .steps-max-width {
-    gap: var(--dl-layout-space-fourunits);
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    flex-direction: row;
+    justify-content: center; 
 }
 
 .steps-container2 {
-    align-items: start;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .steps-container3 {
-    width: 1050px;
-    grid-area: span 1/span 1/span 1/span 1;
+   width: 100%;        
+    max-width: 1920px;  
+    margin: 0 auto;     
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;  
 }
 
 .steps-container4 {
     top: 10%;
     position: sticky;
-    transform: rotate(-2deg);
+    
     margin-bottom: var(--dl-layout-space-twounits);
     background: linear-gradient(135deg, #FFD700, #FFA500); /* златно */
     color: #fff;
@@ -55,7 +59,7 @@
 .steps-container5 {
     top: 10%;
     position: sticky;
-    transform: rotate(2deg);
+   
     margin-bottom: var(--dl-layout-space-twounits);
     background: linear-gradient(135deg, #C0C0C0, #A9A9A9); /* сребро */
     color: #fff;
@@ -79,7 +83,7 @@
 .steps-container6 {
     top: 10%;
     position: sticky;
-    transform: rotate(-2deg);
+    
     margin-bottom: var(--dl-layout-space-twounits);
     background: linear-gradient(135deg, #CD7F32, #8B4513); /* бронза */
     color: #fff;
@@ -91,6 +95,7 @@
 .steps-text17 {
     text-align: center;
     font-size: 30px;
+    color: white I !important;
 }
 
 .steps-text18 {
@@ -105,7 +110,7 @@
 .steps-container9 {
     top: 10%;
     position: sticky;
-transform: rotate(-2deg);
+
     background: linear-gradient(135deg, #007BFF, #0056b3); /* сина боја */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
@@ -114,11 +119,12 @@ transform: rotate(-2deg);
 .steps-container7 {
     top: 10%;
     position: sticky;
-    transform: rotate(2deg);
+   
     background: linear-gradient(135deg, #004080, #012b51);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    
     border-radius: 12px;
-    color: #fff;
+    color: #fff ;
 }
 
 .steps-text20 {
@@ -155,8 +161,10 @@ transform: rotate(-2deg);
 .steps-text14,
 .steps-text17,
 .steps-text20 {
-    color: #121212;
+    color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    
+    
 }
 
 .steps-text12,
@@ -173,6 +181,11 @@ transform: rotate(-2deg);
     color: #111;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+.thq-card {
+    margin-bottom: var(--dl-layout-space-twounits) !important;
+}
+
+
 @media(max-width: 991px) {
     .steps-max-width {
         flex-direction: column;

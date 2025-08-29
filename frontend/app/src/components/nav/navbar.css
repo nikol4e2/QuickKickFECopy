@@ -9,7 +9,7 @@
 }
 
 .navbar-close-menu{
-    margin-right: 20px;
+    margin-right: 40px;
 
 }
 .link-nav{
@@ -154,7 +154,7 @@
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
 
-@media(max-width: 767px) {
+@media(max-width: 1500px) {
     .navbar-navbar-interactive {
         padding-left: var(--dl-layout-space-twounits);
         padding-right: var(--dl-layout-space-twounits);

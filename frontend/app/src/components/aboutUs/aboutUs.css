@@ -4,6 +4,7 @@
     align-items: center;
     padding: 4rem 1rem;
     width: 100%;
+    box-sizing: border-box; /* ✅ спречува ширина да излегува од екранот */
 }
 
 .about-content {
@@ -11,16 +12,21 @@
     flex-direction: column;
     align-items: center;
     max-width: 900px;
+    width: 100%; /* ✅ да се скалира според екранот */
     text-align: center;
     gap: 2rem;
+    box-sizing: border-box;
 }
 
 .about-img {
-    width: 100%;
+    width: 100%; /* ✅ секогаш 100% од parent */
     max-width: 600px;
     height: auto;
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    display: block;       /* ✅ спречува inline проблеми */
+    margin: 0 auto;       /* ✅ центрирање */
+    object-fit: cover;    /* ✅ за подобро прилагодување */
 }
 
 .about-text {
@@ -29,4 +35,39 @@
     color: #333;
     padding: 0 1rem;
     text-align: left;
+}
+
+/* 📱 Tablets и телефони */
+@media (max-width: 768px) {
+    .about-wrapper {
+        padding: 2rem 1rem;
+    }
+
+    .about-content {
+        gap: 1.5rem;
+    }
+
+    .about-img {
+        max-width: 100%; /* ✅ целосно да се намести */
+        border-radius: 12px;
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        padding: 0;
+        text-align: justify;
+    }
+}
+
+/* 📱 Мали екрани */
+@media (max-width: 480px) {
+    .about-wrapper {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
 }
