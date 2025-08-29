@@ -81,3 +81,87 @@
 .contact-info a:hover {
     text-decoration: underline;
 }
+@media (max-width: 991px) {
+    .registration-wrapper {
+        padding: 3rem 1rem;
+    }
+
+    .registration-content {
+        max-width: 700px;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .registration-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .registration-content p {
+        font-size: 1.1rem;
+    }
+
+    .rules {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .rules h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-link {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-info p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .registration-wrapper {
+        padding: 2rem 0.5rem;
+    }
+
+    .registration-content {
+        max-width: 100%;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .registration-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .registration-content p {
+        font-size: 1rem;
+    }
+
+    .rules {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .rules h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-link {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+}

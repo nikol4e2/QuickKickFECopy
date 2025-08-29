@@ -59,7 +59,7 @@ const Navbar = () => {
                             <span className="thq-body-small thq-link" onClick={() => setIsMobileMenuOpen(false)}><Link to="/results">РЕЗУЛТАТИ</Link></span>
 
                             <span className="thq-body-small thq-link" onClick={() => setIsMobileMenuOpen(false)}><Link to="/photos">ГАЛЕРИЈА</Link></span>
-                            <span className="thq-body-small thq-link" onClick={() => setIsMobileMenuOpen(false)}><Link to="/КОНТАКТ">КОНТАКТ</Link></span>
+                            <span className="thq-body-small thq-link" onClick={() => setIsMobileMenuOpen(false)}><Link to="/contact">КОНТАКТ</Link></span>
                         </nav>
                     </div>
                     <div className="navbar-buttons2">
