@@ -27,9 +27,8 @@ const GroupsSection = () => {
         Service.fetchTeamsByGroup("a").then(response => setGroupATeams(response.data));
         Service.fetchTeamsByGroup("b").then(response => setGroupBTeams(response.data));
         Service.fetchTeamsByGroup("c").then(response => setGroupCTeams(response.data));
-        Service.fetchTeamsByGroup("d").then(response => setGroupDTeams(response.data));
-        Service.fetchTeamsByGroup("e").then(response => setGroupETeams(response.data));
-        Service.fetchTeamsByGroup("f").then(response => setGroupFTeams(response.data)).finally(setLoading(false));
+        Service.fetchTeamsByGroup("d").then(response => setGroupDTeams(response.data)).finally(setLoading(false));
+        
     };
 
     const handleToggleSimulation = () => {
@@ -142,13 +141,17 @@ const GroupsSection = () => {
                 </div>
             )}
         
-           
+                {loading ? (
+        <div className="spinner"></div>
+      ) : (
+        <>
                 <h2 className="section-title">Групи</h2>
                 {renderGroupTable("Група А", groupATeams)}
                 {renderGroupTable("Група B", groupBTeams)}
                 {renderGroupTable("Група C", groupCTeams)}
                 {renderGroupTable("Група D", groupDTeams)}
-            
+            </>
+      )}
        
           
         </div>
