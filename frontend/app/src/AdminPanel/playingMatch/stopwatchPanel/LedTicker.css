@@ -1,0 +1,28 @@
+.ticker-container {
+  width: 350px;        /* прилагоди според ширината на тимската колона */
+  overflow: hidden;
+  
+  color: rgb(0, 0, 0);          /* LED зелена боја */
+  font-family: monospace;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px 10px;
+  white-space: nowrap;
+  margin: auto;
+  font-size: 9rem;
+}
+
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+.ticker span {
+  padding-right: 50px; /* растојание помеѓу текстовите */
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

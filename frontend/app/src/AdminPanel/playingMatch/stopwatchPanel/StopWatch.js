@@ -2,6 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import Service from "../../../repository/repository";
 import {useNavigate, useParams} from "react-router-dom";
 import "./Stopwatch.css";
+import LedTicker from './LedTicker';
 //import timerSound from "../../../../public/sounds/10-sec-timer.mp3"
 const StopWatch = () => {
 
@@ -367,7 +368,7 @@ const StopWatch = () => {
 
             <div className="center-section">
                 <div className="team">
-                    <h2>{match.team1.name}</h2>
+                    <LedTicker text={match.team1.name}/>
 
                     <div className="score-stopwatch">{goalsTeam1}</div>
                 </div>
@@ -391,7 +392,7 @@ const StopWatch = () => {
 
 
                 <div className="team">
-                    <h2>{match.team2.name}</h2>
+                    <LedTicker text={match.team2.name}/>
                     <div className="score-stopwatch">{goalsTeam2}</div>
                 </div>
 

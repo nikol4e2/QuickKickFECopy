@@ -21,7 +21,7 @@ root.render(
               {/* Рути за Админ панелот */}
               <Route path="/admin/*" element={<AdminPanel />} />
 
-              <Route path={"/stopwatch/:id"} element={<ProtectedRoute><StopWatch></StopWatch></ProtectedRoute>}></Route>
+              <Route path={"/stopwatch/:id"} element={<StopWatch></StopWatch>}></Route>
               <Route path={"/controls/:id"} element={<ControlPanel></ControlPanel>}></Route>
           </Routes>
 
