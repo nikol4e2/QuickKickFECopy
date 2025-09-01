@@ -8,7 +8,7 @@ const sponsors = [
     { name: "Amphenol", img: "/sponsors/Amphenol.JPG" },
     { name: "Вулканизер Даро", img: "/sponsors/vulkanizerDaro.JPG"},
     { name: "Adient", img: "/sponsors/Adient.JPG" },
-    { name: "Grga Trans", img: "/sponsors/Grga trans.JPG" },
+    
     { name: "Пицерија Стефан Облешево", img: "/sponsors/Pic Stefan.JPG" },
     { name: "Nale Trans", img: "/sponsors/Nale Trans.JPG" },
 
@@ -35,6 +35,7 @@ const sponsors = [
     { name: "Бербер Зоки Облешево", img: "/sponsors/berberZoki.JPG" },
     { name: "Гостилница Мост", img: "/sponsors/most.JPG" },
     { name: "EuroPetrol", img: "/sponsors/euroPetrol.JPG" },
+    { name: "Grga Trans", img: "/sponsors/Grga trans.JPG" },
     
 
 
