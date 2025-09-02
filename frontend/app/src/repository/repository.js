@@ -142,10 +142,16 @@ const Service = {
     //AUTH
     login: (data) =>{
         return axios.post(`/users/login`, data);
+    },
+
+    //RANKING
+    fetchTeamsRankedByGroup: (group) => {
+        return axios.get(`/group/${group}`);
     }
-
-
-
 }
+
+
+
+
 
 export default Service;
