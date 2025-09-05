@@ -97,6 +97,11 @@ const GroupsSection = () => {
 
     return (
         <div className="groups-section-container">
+             {/* 
+<button className="simulate-btn" onClick={handleToggleSimulation}>
+    {showSimulation ? "Затвори" : "Симулирај осминафинале"}
+</button>
+*/}
             {/* Симулација осминафинале (опционално) */}
             {showSimulation && (
                 <div className="simulation-selection">
