@@ -91,9 +91,9 @@
   border-radius: 50%;
   border: 6px solid transparent;
   border-top: 6px solid #e74c3c; /* црвена */
-  border-right: 6px solid #ffffff; /* портокалова */
-  border-bottom: 6px solid #ececec; /* сина */
-  border-left: 6px solid #2ecc71; /* зелена */
+  border-right: 6px solid #f7f7f7; /* портокалова */
+  border-bottom: 6px solid #fbfcfd; /* сина */
+  border-left: 6px solid #eef3f0; /* зелена */
   animation: spin 1s linear infinite, glow 2s ease-in-out infinite alternate;
 }
 

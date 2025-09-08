@@ -83,6 +83,12 @@ const Service = {
             params:matchStatus
         });
     },
+    fetchFinishedMatchesPaginated: (page, size) => {
+    return axios.get("/matches/finished", {
+        params: { page, size }
+    });
+    },
+
 
 
 

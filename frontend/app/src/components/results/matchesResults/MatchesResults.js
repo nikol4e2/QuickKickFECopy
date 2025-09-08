@@ -1,26 +1,28 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
 import Service from "../../../repository/repository";
-import "./matchesResults.css"
-const MatchesResults = () => {
+import "./matchesResults.css";
 
-    const [matches, setMatches] = React.useState([]);
-    const [loading, setLoading] = React.useState(true);
+const MatchesResults = () => {
+    const [matches, setMatches] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [page, setPage] = useState(0); 
+    const [size, setSize] = useState(10); 
+    const [totalPages, setTotalPages] = useState(0);
 
     useEffect(() => {
-        loadFinishedMatches();
-    },[])
+        loadFinishedMatches(page, size);
+    }, [page]);
 
-    const loadFinishedMatches = () => {
-        Service.fetchAllMatchesByStatus({ status: "FINISHED" })
-            .then(results => {
-                const sorted = results.data.sort((a, b) => new Date(b.date) - new Date(a.date));
-                setMatches(sorted);
-
+    const loadFinishedMatches = (page, size) => {
+        setLoading(true);
+        Service.fetchFinishedMatchesPaginated(page, size)
+            .then(response => {
+                setMatches(response.data.content); 
+                setTotalPages(response.data.totalPages);
             })
             .catch(error => console.log(error))
             .finally(() => setLoading(false));
-
-    }
+    };
 
     const formatDate = (dateString) => {
         const date = new Date(dateString);
@@ -32,6 +34,14 @@ const MatchesResults = () => {
         return `${day}.${month}.${year} ${hours}:${minutes}`;
     };
 
+    const handlePrevPage = () => {
+        if (page > 0) setPage(prev => prev - 1);
+    };
+
+    const handleNextPage = () => {
+        if (page < totalPages - 1) setPage(prev => prev + 1);
+    };
+
     return (
         <div className="results-container">
             <h2 className="results-title">Резултати од завршени натпревари</h2>
@@ -41,20 +51,27 @@ const MatchesResults = () => {
             ) : matches.length === 0 ? (
                 <p className="no-results">Нема резултати за прикажување.</p>
             ) : (
-                matches.map(match => (
-                    <div key={match.id} className="results-match-box">
-                        <div className="results-teams">
-                            <span className="results-team">{match.team1.name}</span>
-                            <span className="results-score">{match.goalsTeam1} - {match.goalsTeam2}</span>
-                            <span className="results-team">{match.team2.name}</span>
+                <>
+                    {matches.map(match => (
+                        <div key={match.id} className="results-match-box">
+                            <div className="results-teams">
+                                <span className="results-team">{match.team1.name}</span>
+                                <span className="results-score">{match.goalsTeam1} - {match.goalsTeam2}</span>
+                                <span className="results-team">{match.team2.name}</span>
+                            </div>
+                            <div className="results-date">{formatDate(match.date)}</div>
                         </div>
-                        <div className="results-date">{formatDate(match.date)}</div>
+                    ))}
+
+                    <div className="pagination">
+                        <button onClick={handlePrevPage} disabled={page === 0}>Претходна</button>
+                        <span> Страница {page + 1} од {totalPages} </span>
+                        <button onClick={handleNextPage} disabled={page >= totalPages - 1}>Следна</button>
                     </div>
-                ))
+                </>
             )}
         </div>
     );
-
 };
 
 export default MatchesResults;
