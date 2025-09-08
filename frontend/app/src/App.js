@@ -17,6 +17,7 @@ import ListLiveMatch from "./components/LIVE/ListLiveMatch/ListLiveMatch";
 import LiveMatchStatistics from "./components/LIVE/LiveMatchStatistics/LiveMatchStatistics";
 import Login from "./AdminPanel/Auth/Login";
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
 function App() {
   return (
     <div className="App">
@@ -37,6 +38,7 @@ function App() {
 
       </Routes>
         <Footer/>
+        <Analytics />
     </div>
   );
 }
