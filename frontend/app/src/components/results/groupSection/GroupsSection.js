@@ -65,6 +65,7 @@ const GroupsSection = () => {
                         <th>Одиграни</th>
                         <th>Победи</th>
                         <th>Нерешени</th>
+                        <th>Изгуби</th>
                         <th>Дадени голови</th>
                         <th>Примени голови</th>
                         <th>Гол разлика</th>
@@ -79,6 +80,7 @@ const GroupsSection = () => {
                                 <td>{team.wins + team.draws + team.losses}</td>
                                 <td>{team.wins}</td>
                                 <td>{team.draws}</td>
+                                <td>{team.losses}</td>
                                 <td>{team.scoredGoals}</td>
                                 <td>{team.takenGoals}</td>
                                 <td>{team.scoredGoals - team.takenGoals}</td>
