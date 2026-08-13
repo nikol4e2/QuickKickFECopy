@@ -37,7 +37,7 @@ const SponsorSection = () => {
             <div className="sponsor-container">
                 <div className="sponsor-header">
                     <h2>Покровители</h2>
-                    <p>Голема благодарност до следниве покровители за одржувањето на турнирот во 2025:</p>
+                    <p>Голема благодарност до следниве покровители за одржувањето на турнирот во 2026:</p>
                 </div>
                 <div className="sponsor-grid">
                     {sponsors.map((sponsor, index) => (
