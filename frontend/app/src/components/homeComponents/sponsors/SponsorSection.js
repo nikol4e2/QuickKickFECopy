@@ -18,7 +18,7 @@ const sponsors = [
     { name: "ОУ. Климент Охридски - Облешево", img: "/sponsors/klimentOhridski.JPG" },
 
     { name: "Пицерија Аквариум", img: "/sponsors/akvarium2.jpg" },
-    { name: "Auto Solution", img: "/sponsors/auto2.JPG" },
+    { name: "Auto Solution", img: "/sponsors/auto2.jpg" },
     { name: "El-Bo Ko-Pro Teks", img: "/sponsors/elbo.jpg" },
     {name: "Ресторан Аминта",img: "/sponsors/aminta.JPG" },
     {name: "Boutique Angels",img: "/sponsors/angels.jpg" },
