@@ -17,8 +17,8 @@ const sponsors = [
 
     { name: "ОУ. Климент Охридски - Облешево", img: "/sponsors/klimentOhridski.JPG" },
 
-    { name: "Пицерија Аквариум", img: "/sponsors/akvarium.JPG" },
-    { name: "Auto Solution", img: "/sponsors/auto.JPG" },
+    { name: "Пицерија Аквариум", img: "/sponsors/akvarium2.jpg" },
+    { name: "Auto Solution", img: "/sponsors/auto2.JPG" },
     { name: "El-Bo Ko-Pro Teks", img: "/sponsors/elbo.jpg" },
     {name: "Ресторан Аминта",img: "/sponsors/aminta.JPG" },
     {name: "Boutique Angels",img: "/sponsors/angels.jpg" },
@@ -35,8 +35,8 @@ const sponsors = [
     { name: "VI Motors Kocani", img: "/sponsors/vimotors.jpg" },
 
     { name: "AutoWelt", img: "/sponsors/autowelt.JPG" },
-    { name: "Mak Rent", img: "/sponsors/makren.JPG" },
-    { name: "Park Fly Skopje", img: "/sponsors/park.JPG" },
+    { name: "Mak Rent", img: "/sponsors/makren.jpg" },
+    { name: "Park Fly Skopje", img: "/sponsors/park.jpg" },
     { name: "Ginger Fresh Bar", img: "/sponsors/ginger.JPG"},
 
     { name: "Пиљара Драган Паунов (Раде)", img: "/sponsors/piljara.jpg" },
