@@ -16,7 +16,7 @@ const Gallery = () => {
 
     const loadImages = () => {
         let imageArray = [];
-        for(let i = 1; i <= 43; i++) {
+        for(let i = 1; i <= 51; i++) {
             imageArray.push(`${i}.jpg`);
         }
         setImages(imageArray);
