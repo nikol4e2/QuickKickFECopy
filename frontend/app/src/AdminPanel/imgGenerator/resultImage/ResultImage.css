@@ -52,6 +52,7 @@
 }
 
 .match-row {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,15 +66,29 @@
     margin-bottom: 0;
 }
 
-
 .team {
+    width: 330px;
+
     font-size: 34px;
     font-weight: bold;
     color: white;
-    white-space: nowrap;
+
+    white-space: normal;
+    overflow-wrap: normal;
+    line-height: 1.1;
+}
+
+.team:first-child {
+    text-align: right;
+}
+
+.team:last-child {
+    text-align: left;
 }
 
 .center {
+    width: 90px;
+    flex-shrink: 0;
     text-align: center;
 }
 
