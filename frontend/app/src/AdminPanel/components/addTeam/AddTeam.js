@@ -41,6 +41,8 @@ const AddTeam = () => {
                         <option value="B">Група B</option>
                         <option value="C">Група C</option>
                         <option value="D">Група D</option>
+                        <option value="E">Група E</option>
+                        <option value="F">Група F</option>
                     </select>
                 </div>
                 <button type="submit">ДОДАДИ ТИМ</button>
