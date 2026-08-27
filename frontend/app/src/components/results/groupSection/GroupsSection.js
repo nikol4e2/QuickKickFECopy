@@ -8,7 +8,9 @@ const GroupsSection = () => {
     const [groupBTeams, setGroupBTeams] = useState([]);
     const [groupCTeams, setGroupCTeams] = useState([]);
     const [groupDTeams, setGroupDTeams] = useState([]);
-    
+    const [groupETeams, setGroupETeams] = useState([]);
+    const [groupFTeams, setGroupFTeams] = useState([]);
+
 
     const [showSimulation, setShowSimulation] = useState(false);
     const [selectedGroups, setSelectedGroups] = useState([]);
@@ -26,14 +28,18 @@ const GroupsSection = () => {
             Service.fetchTeamsRankedByGroup("B"),
             Service.fetchTeamsRankedByGroup("C"),
             Service.fetchTeamsRankedByGroup("D"),
-            
+            Service.fetchTeamsRankedByGroup("E"),
+            Service.fetchTeamsRankedByGroup("F"),
+
         ])
-        .then(([groupARes, groupBRes, groupCRes, groupDRes]) => {
+        .then(([groupARes, groupBRes, groupCRes, groupDRes],groupERes,groupFRes) => {
             setGroupATeams(groupARes.data);
             setGroupBTeams(groupBRes.data);
             setGroupCTeams(groupCRes.data);
             setGroupDTeams(groupDRes.data);
-    
+            setGroupETeams(groupERes.data);
+            setGroupFTeams(groupFRes.data);
+
         })
         .catch(err => console.error(err))
         .finally(() => setLoading(false));
@@ -99,11 +105,11 @@ const GroupsSection = () => {
 
     return (
         <div className="groups-section-container">
-             {/* 
+             {
 <button className="simulate-btn" onClick={handleToggleSimulation}>
     {showSimulation ? "Затвори" : "Симулирај осминафинале"}
 </button>
-*/}
+}
             {/* Симулација осминафинале (опционално) */}
             {showSimulation && (
                 <div className="simulation-selection">
@@ -128,8 +134,8 @@ const GroupsSection = () => {
                             groupBTeams={groupBTeams}
                             groupCTeams={groupCTeams}
                             groupDTeams={groupDTeams}
-                           // groupETeams={groupETeams}
-                           // groupFTeams={groupFTeams}
+                            groupETeams={groupETeams}
+                            groupFTeams={groupFTeams}
                             selectedGroups={selectedGroups}
                         />
                     )}
@@ -145,6 +151,8 @@ const GroupsSection = () => {
                     {renderGroupTable("Група B", groupBTeams)}
                     {renderGroupTable("Група C", groupCTeams)}
                     {renderGroupTable("Група D", groupDTeams)}
+                    {renderGroupTable("Група E", groupETeams)}
+                    {renderGroupTable("Група F", groupFTeams)}
                   </>
             )}
         </div>
