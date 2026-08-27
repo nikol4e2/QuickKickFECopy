@@ -32,7 +32,7 @@ const GroupsSection = () => {
             Service.fetchTeamsRankedByGroup("F"),
 
         ])
-        .then(([groupARes, groupBRes, groupCRes, groupDRes],groupERes,groupFRes) => {
+        .then(([groupARes, groupBRes, groupCRes, groupDRes,groupERes,groupFRes]) => {
             setGroupATeams(groupARes.data);
             setGroupBTeams(groupBRes.data);
             setGroupCTeams(groupCRes.data);
