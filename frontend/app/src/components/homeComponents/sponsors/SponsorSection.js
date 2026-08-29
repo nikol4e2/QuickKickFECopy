@@ -21,11 +21,7 @@ const sponsors = [
         img: "/sponsors/Adient.JPG",
         category: "ultra-gold"
     },
-    {
-        name: "Anthura",
-        img: "/sponsors/anthura.JPG",
-        category: "ultra-gold"
-    },
+
 
 
 
@@ -46,7 +42,17 @@ const sponsors = [
         name: "Агрохемикал",
         img: "/sponsors/ahrohemikal.jpg",
         category: "gold"
+    },  {
+        name: "Рики Јуниор",
+        img: "/sponsors/rikijunior.jpg",
+        category: "gold"
     },
+    {
+        name: "ФФМ",
+        img: "/sponsors/ffm.jpg",
+        category: "gold"
+    },
+
 
     //regular
     {
@@ -64,7 +70,11 @@ const sponsors = [
         img: "/sponsors/mbhome.jpg",
         category: "regular"
     },
-
+    {
+        name: "Grga Trans",
+        img: "/sponsors/Grga Trans.JPG",
+        category: "regular"
+    },
 
     {
         name: "ОУ. Климент Охридски - Облешево",
@@ -86,6 +96,12 @@ const sponsors = [
         img: "/sponsors/elbo.jpg",
         category: "regular"
     },
+    {
+        name: "Sweet Sensation Maja",
+        img: "/sponsors/maja.jpg",
+        category: "regular"
+    },
+
     {
         name: "Ресторан Аминта",
         img: "/sponsors/aminta.JPG",
@@ -127,6 +143,13 @@ const sponsors = [
         category: "regular"
     },
     {
+        name: "Филаделфија",
+        img: "/sponsors/filadelfija.jpg",
+        category: "regular"
+    },
+
+
+    {
         name: "ТП Филип Александров",
         img: "/sponsors/tpfilip.jpg",
         category: "regular"
@@ -136,6 +159,23 @@ const sponsors = [
         img: "/sponsors/eStone.JPG",
         category: "regular"
     },
+    {
+        name: "Corridor 22",
+        img: "/sponsors/coridor.jpg",
+        category: "regular"
+    },
+    {
+        name: "Aledar Iznenering",
+        img: "/sponsors/aledarin.jpg",
+        category: "regular"
+    },
+    {
+        name: "Blagica Kitchen",
+        img: "/sponsors/blagica.png",
+        category: "regular"
+    },
+
+
     {
         name: "Eko Bilding",
         img: "/sponsors/eko.jpg",
@@ -152,8 +192,8 @@ const sponsors = [
         category: "regular"
     },
     {
-        name: "AutoWelt",
-        img: "/sponsors/autowelt.JPG",
+        name: "Zaov Detailing",
+        img: "/sponsors/zaovdetaling.jpg",
         category: "regular"
     },
     {
@@ -161,6 +201,12 @@ const sponsors = [
         img: "/sponsors/makren.jpg",
         category: "regular"
     },
+    {
+        name: "INOX Dizajn Milanovski",
+        img: "/sponsors/inox.jpg",
+        category: "regular"
+    },
+
     {
         name: "Park Fly Skopje",
         img: "/sponsors/park.jpg",
@@ -172,10 +218,18 @@ const sponsors = [
         category: "regular"
     },
     {
-        name: "Пиљара Драган Паунов (Раде)",
-        img: "/sponsors/piljara.jpg",
+        name: "Кафеана Огниште",
+        img: "/sponsors/ogsnite.jpg",
         category: "regular"
     },
+    {
+        name: "Freeform 2020",
+        img: "/sponsors/freeform2020.jpg",
+        category: "regular"
+    },
+
+
+
 
 
     // =========================
@@ -194,11 +248,11 @@ const sponsors = [
     //     category: "regular"
     // },
 
-    // {
-    //     name: "Evina",
-    //     img: "/sponsors/evina.JPG",
-    //     category: "regular"
-    // },
+    {
+        name: "Evina",
+        img: "/sponsors/evina.JPG",
+        category: "regular"
+    },
 
     // {
     //     name: "EuroPetrol",
