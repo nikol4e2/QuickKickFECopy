@@ -72,7 +72,7 @@ const sponsors = [
     },
     {
         name: "Grga Trans",
-        img: "/sponsors/Grga Trans.JPG",
+        img: "/sponsors/grga.jpg",
         category: "regular"
     },
 
@@ -250,7 +250,7 @@ const sponsors = [
 
     {
         name: "Evina",
-        img: "/sponsors/evina.JPG",
+        img: "/sponsors/evina.jpg",
         category: "regular"
     },
 
