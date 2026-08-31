@@ -44,7 +44,7 @@ const ResultImage = ({ date, nextDate, results, upcoming }) => {
 
     const HEADER_HEIGHT = 260;
     const SECTION_TITLE_HEIGHT = 90;
-    const MATCH_HEIGHT = 135;
+    const MATCH_HEIGHT = 185;
     const FOOTER_HEIGHT = 200;
 
 
