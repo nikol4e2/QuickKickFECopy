@@ -5,7 +5,7 @@ import "./ResultImage.css";
 import template from "../../../assets/template.png";
 
 import sponsor1 from "../../../assets/mainsponsors/opstina.jpg";
-import sponsor2 from "../../../assets/mainsponsors/amphenol.jpg";
+import sponsor2 from "../../../assets/mainsponsors/amphenol2.jpg";
 import sponsor4 from "../../../assets/mainsponsors/miki.jpg";
 import sponsor5 from "../../../assets/mainsponsors/ahrohemikal.jpg";
 import sponsor6 from "../../../assets/mainsponsors/nale.jpg";
