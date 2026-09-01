@@ -4,13 +4,12 @@ import "./ResultImage.css";
 
 import template from "../../../assets/template.png";
 
-import sponsor1 from "../../../assets/mainsponsors/opstina.JPG";
-import sponsor2 from "../../../assets/mainsponsors/amphenolPng.png";
-import sponsor3 from "../../../assets/mainsponsors/anthuraPng.png";
+import sponsor1 from "../../../assets/mainsponsors/opstina.jpg";
+import sponsor2 from "../../../assets/mainsponsors/amphenol.jpg";
 import sponsor4 from "../../../assets/mainsponsors/miki.jpg";
 import sponsor5 from "../../../assets/mainsponsors/ahrohemikal.jpg";
-import sponsor6 from "../../../assets/mainsponsors/nalePng.png";
-import sponsor7 from "../../../assets/mainsponsors/adientPng.png";
+import sponsor6 from "../../../assets/mainsponsors/nale.jpg";
+import sponsor7 from "../../../assets/mainsponsors/adient.jpg";
 
 const ResultImage = ({ date, nextDate, results, upcoming }) => {
 
