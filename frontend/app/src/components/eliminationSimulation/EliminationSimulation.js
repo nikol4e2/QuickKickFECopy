@@ -26,6 +26,7 @@ const EliminationSimulation = ({groupATeams, groupBTeams, groupCTeams, groupDTea
 
     const [matches, setMatches] = useState([]);
 
+    const [quarterFinalMatches, setQuarterFinalMatches] = useState([]);
 
     const makeMatchesPairs=()=> {
         const matchMakers = [];
@@ -118,6 +119,25 @@ const EliminationSimulation = ({groupATeams, groupBTeams, groupCTeams, groupDTea
 
 
         setMatches(matchMakers);
+
+        setQuarterFinalMatches([
+            {
+                team1: {name: "Победник ОФ 1"},
+                team2: {name: "Победник ОФ 2"}
+            },
+            {
+                team1: {name: "Победник ОФ 3"},
+                team2: {name: "Победник ОФ 4"}
+            },
+            {
+                team1: {name: "Победник ОФ 5"},
+                team2: {name: "Победник ОФ 6"}
+            },
+            {
+                team1: {name: "Победник ОФ 7"},
+                team2: {name: "Победник ОФ 8"}
+            }
+        ]);
     }
 
     useEffect(() => {
@@ -129,6 +149,17 @@ const EliminationSimulation = ({groupATeams, groupBTeams, groupCTeams, groupDTea
             <h3 className="simulation-title">Осминафинале</h3>
             <div className="matches-wrapper-simulation">
                 {matches.map((match, index) => (
+                    <div key={index} className={`match-row-simulation match-${index+1}`}>
+                        <span className="match-simulation">{match.team1?.name || "?"} - {match.team2?.name || "?"}</span>
+
+
+                    </div>
+                ))}
+            </div>
+
+            <h3 className="simulation-title">Четвртфинале</h3>
+            <div className="matches-wrapper-simulation">
+                {quarterFinalMatches.map((match, index) => (
                     <div key={index} className={`match-row-simulation match-${index+1}`}>
                         <span className="match-simulation">{match.team1?.name || "?"} - {match.team2?.name || "?"}</span>
 
